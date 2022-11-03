@@ -1,0 +1,16 @@
+﻿<Page x:Class="Controller.Main"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:Controller"
+      mc:Ignorable="d"
+      Title="Main" Height="701" Width="1053">
+    <Grid>
+        <Button Width="100" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Click="PDF_to_Word" Margin="153,115">PDF转Word</Button>
+        <Button Width="100" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Word_to_PDF" Margin="263,115">Word转PDF</Button>
+        <Button Width="100" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Edit_PDF" Margin="153,172">直接编辑PDF</Button>
+        <Button Width="100" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Pic" Margin="263,172">图片转PDF</Button>
+        <Button Width="60" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Donate" Margin="10,275">捐助作者</Button>
+    </Grid>
+</Page>

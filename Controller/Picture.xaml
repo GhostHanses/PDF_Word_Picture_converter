@@ -1,0 +1,80 @@
+﻿<Page x:Class="Controller.Picture"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:Controller"
+      mc:Ignorable="d"
+      Title="Picture" Height="640" Width="850">
+    <Grid Margin="0,0,10,0">
+        <Viewbox Name="Viewbox" Width="15" Height="15" Margin="365,197,460,428" MouseEnter="enter" MouseLeave="leave">
+            <Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Name="图层_1" Canvas.Left="0"
+                    Canvas.Top="0" Width="200" Height="200">
+                <Canvas.RenderTransform>
+                    <TranslateTransform X="0" Y="0" />
+                </Canvas.RenderTransform>
+                <Canvas.Resources />
+                <!--Unknown tag: sodipodi:namedview-->
+                <Canvas Name="layer2">
+                    <Ellipse xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="3" Width="199"
+                             Canvas.Top="1" Height="199" Name="path90" Fill="#FFFFFFFF" StrokeThickness="1.59776" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                </Canvas>
+                <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path35" Fill="#000000"
+                      Data="M100 183.3c46 0 83.3-37.3 83.3-83.3S146 16.7 100 16.7S16.7 54 16.7 100S54 183.3 100 183.3L100 183.3z   M100 200C44.8 200 0 155.2 0 100S44.8 0 100 0s100 44.8 100 100S155.2 200 100 200z" />
+                <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path37" Fill="#000000"
+                      Data="M101.8 39.3C89.6 39.3 80 42.8 73 50c-7.2 7-10.7 16.5-10.7 28.7H80c0-7.3 1.5-13.2 4.5-17.2  c3.3-4.7 8.8-7 16.3-7c6 0 10.7 1.7 14 5c3.2 3.3 4.8 7.8 4.8 13.7c0 4.3-1.5 8.3-4.5 12.2l-2.8 3.2c-10.3 9.2-16.7 16-19 20.7  c-2.2 4.3-3.2 9.7-3.2 15.8v2.8h17.8V125c0-4.2 0.8-7.8 2.7-11.2c1.5-3 3.8-5.8 6.8-8.5c8-6.8 12.7-11.2 14.2-13  c4-5.3 6.2-12.2 6.2-20.3c0-10-3.3-18-9.8-23.8C121.2 42.2 112.6 39.3 101.8 39.3z M98.9 136.8c-3.5 0-6.3 1-8.5 3.3  c-2.5 2.2-3.7 5-3.7 8.5c0 3.3 1.2 6.2 3.7 8.5c2.2 2.3 5 3.5 8.5 3.5c3.3 0 6.3-1.2 8.8-3.3c2.3-2.3 3.5-5.2 3.5-8.7  s-1.2-6.3-3.5-8.5C105.4 137.8 102.4 136.8 98.9 136.8z" />
+                <Canvas Name="layer1">
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path377" Fill="#FF3D3D3D"
+                          Data="M 101.8 39.3 C 89.6 39.3 80 42.8 73 50 65.8 57 62.3 66.5 62.3 78.7 H 80 c 0 -7.3 1.5 -13.2 4.5 -17.2 3.3 -4.7 8.8 -7 16.3 -7 6 0 10.7 1.7 14 5 3.2 3.3 4.8 7.8 4.8 13.7 0 4.3 -1.5 8.3 -4.5 12.2 l -2.8 3.2 c -10.3 9.2 -16.7 16 -19 20.7 -2.2 4.3 -3.2 9.7 -3.2 15.8 v 2.8 h 17.8 V 125 c 0 -4.2 0.8 -7.8 2.7 -11.2 1.5 -3 3.8 -5.8 6.8 -8.5 8 -6.8 12.7 -11.2 14.2 -13 4 -5.3 6.2 -12.2 6.2 -20.3 0 -10 -3.3 -18 -9.8 -23.8 -6.8 -6 -15.4 -8.9 -26.2 -8.9 z m -2.9 97.5 c -3.5 0 -6.3 1 -8.5 3.3 -2.5 2.2 -3.7 5 -3.7 8.5 0 3.3 1.2 6.2 3.7 8.5 2.2 2.3 5 3.5 8.5 3.5 3.3 0 6.3 -1.2 8.8 -3.3 2.3 -2.3 3.5 -5.2 3.5 -8.7 0 -3.5 -1.2 -6.3 -3.5 -8.5 -2.3 -2.3 -5.3 -3.3 -8.8 -3.3 z" />
+                </Canvas>
+            </Canvas>
+        </Viewbox>
+        <Popup Name="pop" PopupAnimation="Fade" Width="160" Height="50"
+               PlacementTarget="{Binding ElementName=Viewbox}" Placement="Top" StaysOpen="True">
+            <Grid Background="Gray">
+                <Rectangle Width="150" Height="40" Fill="White"></Rectangle>
+                <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10">
+                    <TextBlock>勾选此选项,</TextBlock>
+                    <TextBlock>可以重复导入相同的图片。</TextBlock>
+                </StackPanel>
+            </Grid>
+        </Popup>
+        <RadioButton Name ="NameOnly" Margin="68,197,680,428" Checked="NameOnly_Checked" FontSize="12" GroupName="pathorname">仅显示文件名</RadioButton>
+        <RadioButton Name ="FullPath" Margin="168,197,581,428" Checked="FullPath_Checked" FontSize="12" GroupName="pathorname">显示完整路径</RadioButton>
+        <CheckBox Name="cbx" Margin="268,197,480,428" Checked="check" Unchecked="uncheck" FontSize="12">允许图片重复</CheckBox>
+        <TextBox Name="OutputBox" Width="300" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top"
+                 Margin="70,220,0,0">
+        </TextBox>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Margin="10,60">图片 转 PDF</TextBlock>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,220,0,0">输出位置:</TextBlock>
+        <ScrollViewer HorizontalScrollBarVisibility="Visible" Width="300" Height="100" HorizontalAlignment="Left"
+                      VerticalAlignment="Top" Margin="70,90">
+            <StackPanel Name="Panel">
+
+            </StackPanel>
+        </ScrollViewer>
+        <Button Name="br2" Width="35" Height="20" Click="SelectOut" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="380,220,0,0">
+            浏览...
+        </Button>
+        <Button Name="back" Width="85" Height="30" Click="ButtonBase_OnClick" HorizontalAlignment="Left"
+                VerticalAlignment="Top" Margin="10,270">
+            返回上一界面
+        </Button>
+        <Button Name="begin" FontSize="20" Click="Begin" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="370,270">
+            开始转换
+        </Button>
+        <ProgressBar Name="Bar" Width="250" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top"
+                     Margin="110,270" Visibility="Hidden">
+        </ProgressBar>
+        <Button Name="up" Width="36" Height="20" Click="Up" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="380,120,0,0" Content="上移" />
+        <Button Name="add" Width="36" Height="20" Click="SelectIn" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="380,95,0,0" Content="添加..." />
+        <Button Name="down" Width="36" Height="20" Click="Down" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="380,145,0,0" Content="下移" />
+        <Button Name="delete" Width="36" Height="20" Click="Delete" HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="380,170,0,0" Content="删除" />
+    </Grid>
+</Page>

@@ -1,0 +1,21 @@
+﻿<Page x:Class="Controller.PTW"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:Controller"
+      mc:Ignorable="d"
+      Title="PTW" Height="640" Width="850">
+    <Grid>
+        <TextBox Name="InputBox" Width="300" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="70,130"></TextBox>
+        <TextBox Name="OutputBox" Width="300" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="70,180"></TextBox>
+        <TextBlock  HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Margin="10,60">PDF 转 Word</TextBlock>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,130">文件路径:</TextBlock>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,180">输出位置:</TextBlock>
+        <Button Name="br1" Width="35" Height="20" Click="SelectIn" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="380,130">浏览...</Button>
+        <Button Name="br2" Width="35" Height="20" Click="SelectOut" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="380,180">浏览...</Button>
+        <Button Name="back" Width="85" Height="30" Click="ButtonBase_OnClick" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,270">返回上一界面</Button>
+        <Button Name="begin" FontSize="20" Click="Begin" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="370,270">开始转换</Button>
+        <ProgressBar Name="Bar" Width="250" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="110,270" Visibility="Hidden"></ProgressBar>
+    </Grid>
+</Page>

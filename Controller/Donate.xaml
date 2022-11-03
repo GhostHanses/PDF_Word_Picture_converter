@@ -1,0 +1,18 @@
+﻿<Page x:Class="Controller.Donate"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:Controller"
+      mc:Ignorable="d"
+      Title="Donate" Height="640" Width="850">
+    <Grid>
+        <TextBlock FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="117,15">微信</TextBlock>
+        <TextBlock FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="310,15">支付宝</TextBlock>
+        <Image Name="Image1" Width="200" Height="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60,50"></Image>
+        <Image Name="Image2" Width="215" Height="215" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="260,55"></Image>
+        <Button Width="85" Height="30" Click="ButtonBase_OnClick" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,270">返回上一界面</Button>
+        <TextBlock FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="125,270">几块也是情，您的支持是我最大的动力</TextBlock>
+        <TextBlock FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="120,290">以后会开发出更多好用的软件回馈各位</TextBlock>
+    </Grid>
+</Page>

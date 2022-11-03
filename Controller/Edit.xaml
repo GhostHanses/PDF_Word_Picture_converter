@@ -1,0 +1,13 @@
+﻿<Page x:Class="Controller.Edit"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:Controller"
+      mc:Ignorable="d"
+      Title="Edit" Height="640" Width="850">
+    <Grid>
+        <TextBlock FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,130">正在开发中，敬请期待！</TextBlock>
+        <Button Width="85" Height="30" Click="ButtonBase_OnClick" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,270">返回上一界面</Button>
+    </Grid>
+</Page>
